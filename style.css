@@ -67,3 +67,7 @@ h2{
     color: rgb(216, 175, 254);
 }
 
+label{
+    transform: translate(3%);
+}
+
