@@ -8,6 +8,8 @@ body{
     padding: 5em;
     font-size: 1.3em;
     color:  rgb(240, 252, 252);
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
@@ -34,6 +36,8 @@ h2{
     font-size: 1.35em;
     padding: 1em;
     color:  rgb(240, 252, 252);
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
@@ -54,6 +58,8 @@ h2{
 .calculateContainer{
     color:  rgb(240, 252, 252);
     text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
