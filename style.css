@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(110, 110, 110);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+    font-size: 1.3em;
+    color:  rgb(240, 252, 252);
+
+}
+
+.input{
+    padding: 1em;
+    margin: 1em;
+    border-style:none;
+    border-radius: 5px;
+    background-color: rgb(240, 252, 252);
+    font-size: 16px;
+}
+
+
+h2{
+    text-align: center;
+    margin-top: 3em;
+    color:  rgb(240, 252, 252);
+
+}
+
+.displayCountdown{
+    display: flex;
+    justify-content:center;
+    font-size: 1.35em;
+    padding: 1em;
+    color:  rgb(240, 252, 252);
+
+}
+
+.spanEl{
+    transform: translate(-60%);
+    margin-top: 2em;
+    padding: 0.2em;
+}
+
+
+
+#calculate{
+    background-image: linear-gradient(to bottom right, rgb(231, 153, 249), rgb(214, 62, 249));
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.calculateContainer{
+    color:  rgb(240, 252, 252);
+    text-align: center;
+
+}
+
+#seconds{
+    color: rgb(216, 175, 254);
+}
+

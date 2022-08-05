@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time until any event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 id="h1">Calculate the time until any future event.</h2>
+        <form name="form" class="container">
+            <label for="userName">Enter your name</label>
+            <input type="text" class="input" id="userName" placeholder="i.e. John Doe" name="userName">
+            <br><br>
+
+            <label for="eventName">Enter event name</label>
+            <input type="text" class="input" id="eventName" placeholder="i.e. Birthday" name="eventName">
+            <br><br>
+
+
+            <label for="eventDate">Enter event future date</label>
+            <input type="date" class="input" id="eventDate" placeholder="Enter the event future date" name="eventDate">
+            <br><br>
+
+
+            <input type="button" class="input" value="CALCULATE" id="calculate">
+        </form>
+
+    <div class="calculateContainer">
+        <h2 id="name"></h2>
+        <h3 id="event"></h3>
+
+
+    </div>
+
+
+        <div class="displayCountdown">
+
+                <p id="days"></p>
+                <span class="spanEl" id="daysSpan"></span>
+
+                <p id="hours"></p>
+                <span class="spanEl" id="hoursSpan"></span>
+
+                <p id="minutes"></p>
+                <span class="spanEl" id="minutesSpan"></span>
+
+                <p id="seconds"></p>
+                <span class="spanEl" id="secondsSpan"></span>
+        </div>
+        
+    <script src="script.js"></script>
+</body>
+</html>
