@@ -25,26 +25,32 @@ calculate.onclick = function(){
         document.getElementById("minutesSpan").innerHTML = "minutes";
         document.getElementById("secondsSpan").innerHTML = "seconds";
 
+              
         setInterval(function(){
+            let dateDifferenceInSeconds = new Date (eventDateObj.getTime() - Date.now());
+            let secondsDiff = dateDifferenceInSeconds / 1000;
+
+            let days = Math.floor((secondsDiff / 3600) / 24);
+            let hours = Math.floor(secondsDiff / 3600) % 24; 
+            let minutes = Math.floor((secondsDiff / 60) % 60);
+            let seconds = Math.floor(secondsDiff) % 60;
         
-            let dateDifference = new Date(eventDateObj.getTime() - Date.now());
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
     
-            document.getElementById("days").innerHTML = dateDifference.getDate();
-            document.getElementById("hours").innerHTML = dateDifference.getHours();
-            document.getElementById("minutes").innerHTML = formatTime(dateDifference.getMinutes());
-            document.getElementById("seconds").innerHTML = formatTime(dateDifference.getSeconds());
+            console.log(days, hours, minutes, seconds);
+
     
         }, 1000);
     } else {
         document.getElementById("name").innerHTML = "Please enter a date in the future"
     }
-    console.log(eventDateObj.getTime())
-
+    
  }
 
  function formatTime(time) {
     return time < 10 ? ("0" + time) : time;
  }
 }
-
-
